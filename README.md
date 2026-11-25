@@ -4,7 +4,7 @@
 
 ![界面截图](docs/screenshot.png)
 
-`disk-cleaner` 使用 **Rust + [GPUI](https://github.com/zed-industries/zed/tree/main/crates/gpui)** 编写，界面与交互参考 macOS 应用 SuckMyDisk 的 Windows 重写实现。它会扫描本机所有本地磁盘，把空间去向整理成容量概览、Treemap 和分类清单；只推荐能重新生成或可以找回的内容，并在真正清理前逐项复核。
+`disk-cleaner` 使用 **Rust + [GPUI](https://github.com/zed-industries/zed/tree/main/crates/gpui)** 编写，界面交互参考了 macOS 应用 SuckMyDisk。它会扫描本机所有本地磁盘，把空间去向整理成容量概览、Treemap 和分类清单；只推荐能重新生成或可以找回的内容，并在真正清理前逐项复核。
 
 ## 功能
 
@@ -67,7 +67,7 @@ cargo build --release
 | `history.json` | 每日空间变化与分类变化历史 |
 | `settings.json` | 主题、语言等偏好设置 |
 
-从旧版本（目录名 `SuckMyDisk`）升级时，首次启动会自动迁移以上文件。
+从旧版本升级时，首次启动会自动迁移以上文件。
 
 ## 应用图标
 
